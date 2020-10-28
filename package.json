@@ -10,7 +10,7 @@
     "dist": "electron-builder --publish always",
     "postinstall": "electron-builder install-app-deps"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ypfsoul/eelectron-test-proj",
   "keywords": [
     "Electron",
     "quick",
