@@ -21,6 +21,11 @@ function createWindow(): void {
   if (isDev) {
     mainWindow.webContents.openDevTools();
   } else {
+    require('update-electron-app')({
+      repo: 'ypfsoul/electron-test-proj',
+      updateInterval: '5 minutes',
+      logger: require('electron-log')
+    })
     console.log('Running in production');
   }
   
