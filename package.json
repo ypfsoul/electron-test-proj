@@ -56,6 +56,7 @@
   },
   "dependencies": {
     "electron-is-dev": "^1.2.0",
+    "electron-log": "^4.2.4",
     "update-electron-app": "^2.0.1"
   }
 }
