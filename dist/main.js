@@ -17,9 +17,12 @@ function createWindow() {
     });
     // and load the index.html of the app.
     mainWindow.loadFile(path.join(__dirname, '../html/index.html'));
-    if (!electron_1.app.isPackaged) {
-        // Open the DevTools.
+    const isDev = require('electron-is-dev');
+    if (isDev) {
         mainWindow.webContents.openDevTools();
+    }
+    else {
+        console.log('Running in production');
     }
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

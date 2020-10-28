@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "electron-test",
+  "version": "1.0.1",
+  "description": "A minimal electron-test application",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
@@ -21,12 +21,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "node": "^10.15.0",
+    "@types/node": "^12.19.0",
     "electron": "^10.1.5",
-    "electron-builder":"^22.9.1"
+    "electron-builder": "^22.9.1",
+    "electron-is-dev": "^1.2.0"
   },
   "build": {
-    "appId": "com.boyaa.test",
+    "appId": "com.boyaa.electron.test",
     "directories": {
       "output": "build"
     },
@@ -52,5 +53,8 @@
         "zip"
       ]
     }
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.2.0"
   }
 }
