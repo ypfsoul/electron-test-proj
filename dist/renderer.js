@@ -4,3 +4,6 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+var package = require("../package.json");
+document.getElementById('version').innerText = "v" + package.version;
+//# sourceMappingURL=renderer.js.map
