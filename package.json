@@ -1,6 +1,6 @@
 {
   "name": "electron-test",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A minimal electron-test application",
   "main": "dist/main.js",
   "scripts": {
