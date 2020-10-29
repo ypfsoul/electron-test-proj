@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "start": "npm run build && electron ./dist/main.js",
-    "dist": "electron-builder --publish never",
+    "dist": "electron-builder --publish always",
     "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/ypfsoul/electron-test-proj",
