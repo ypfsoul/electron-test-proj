@@ -1,13 +1,13 @@
 {
   "name": "electron-test",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A minimal electron-test application",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "start": "npm run build && electron ./dist/main.js",
-    "dist": "electron-builder --publish always",
+    "dist": "electron-builder --publish onTag",
     "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/ypfsoul/electron-test-proj",
